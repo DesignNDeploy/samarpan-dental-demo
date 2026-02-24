@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pediatric Dentistry in Dahod | Samarpan Dental Clinic</title>
+  <meta name="description" content="Permanent Pediatric Dentistry in Dahod, Gujarat. Replace missing teeth with titanium implants that look & function like natural teeth. Book free consultation at Samarpan Dental." />
+  <meta name="keywords" content="Pediatric Dentistry Dahod, tooth implant Dahod Gujarat, missing tooth replacement Dahod, permanent tooth Dahod, implant cost Dahod" />
+  <link rel="canonical" href="https://www.samarpandental.in/pages/services/dental-implants.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Pediatric Dentistry in Dahod | Samarpan Dental Clinic" />
+  <meta property="og:description" content="Permanent titanium Pediatric Dentistry in Dahod. Looks, feels and functions like your natural tooth. Book your free consultation today." />
+  <meta property="og:url" content="https://www.samarpandental.in/pages/services/dental-implants.html" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../../css/variables.css" />
+  <link rel="stylesheet" href="../../css/base.css" />
+  <link rel="stylesheet" href="../../css/components.css" />
+  <link rel="stylesheet" href="../../css/layout.css" />
+
+  <!-- Service Page Specific Styles -->
+  <style>
+    .service-hero {
+      background: linear-gradient(135deg, #063D46, #0A7E8C);
+      padding: calc(var(--header-height) + var(--space-16)) 0 var(--space-20);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle at 80% 50%, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 50px 50px;
+    }
+    .service-hero .container { position: relative; z-index: 1; }
+    .service-hero__breadcrumb {
+      font-size: var(--text-sm);
+      color: rgba(255,255,255,0.6);
+      margin-bottom: var(--space-4);
+    }
+    .service-hero__breadcrumb a { color: rgba(255,255,255,0.6); transition: color var(--transition-fast); }
+    .service-hero__breadcrumb a:hover { color: white; }
+    .service-hero__breadcrumb span { margin: 0 var(--space-2); }
+    .service-hero__title { color: white; font-size: var(--text-5xl); margin-bottom: var(--space-5); }
+    .service-hero__subtitle { color: rgba(255,255,255,0.80); font-size: var(--text-lg); max-width: 600px; line-height: var(--leading-relaxed); }
+    .service-hero__actions { margin-top: var(--space-8); display: flex; gap: var(--space-4); flex-wrap: wrap; }
+
+    .service-content { padding: var(--space-20) 0; }
+    .service-content__grid { display: grid; grid-template-columns: 2fr 1fr; gap: var(--space-12); align-items: start; }
+    .service-content__sidebar { position: sticky; top: calc(var(--header-height) + 24px); display: flex; flex-direction: column; gap: var(--space-5); }
+
+    .sidebar-card {
+      background: var(--color-white);
+      border-radius: var(--radius-lg);
+      padding: var(--space-6);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--color-light-gray);
+    }
+    .sidebar-card__title { font-family: var(--font-body); font-size: var(--text-lg); font-weight: var(--weight-bold); color: var(--color-charcoal); margin-bottom: var(--space-4); }
+
+    .process-step { display: flex; gap: var(--space-4); margin-bottom: var(--space-6); }
+    .process-step:last-child { margin-bottom: 0; }
+    .process-step__number {
+      width: 36px; height: 36px; border-radius: var(--radius-full);
+      background: var(--color-primary); color: white; display: flex;
+      align-items: center; justify-content: center; font-weight: var(--weight-bold);
+      font-size: var(--text-sm); flex-shrink: 0;
+    }
+    .process-step__title { font-weight: var(--weight-semibold); color: var(--color-charcoal); margin-bottom: 4px; }
+    .process-step__desc { font-size: var(--text-sm); color: var(--color-dark-gray); line-height: var(--leading-relaxed); }
+
+    .price-tag { background: var(--color-mint); border-radius: var(--radius-md); padding: var(--space-4); margin-bottom: var(--space-3); }
+    .price-tag__label { font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-primary); font-weight: var(--weight-semibold); }
+    .price-tag__amount { font-size: var(--text-2xl); font-weight: var(--weight-bold); color: var(--color-charcoal); }
+
+    .ideal-for { display: flex; flex-direction: column; gap: var(--space-3); }
+    .ideal-item { display: flex; gap: var(--space-3); align-items: flex-start; font-size: var(--text-sm); color: var(--color-dark-gray); }
+    .ideal-item::before { content: '✓'; color: var(--color-success); font-weight: bold; flex-shrink: 0; margin-top: 2px; }
+
+    @media (max-width: 1024px) {
+      .service-content__grid { grid-template-columns: 1fr; }
+      .service-content__sidebar { position: static; }
+    }
+    @media (max-width: 768px) {
+      .service-hero__title { font-size: var(--text-4xl); }
+    }
+  </style>
+
+  <!-- Schema: Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    "name": "Pediatric Dentistry",
+    "procedureType": "Therapeutic",
+    "description": "Permanent titanium Pediatric Dentistry to replace missing teeth. Procedure includes implant placement, osseointegration period, and crown fitting.",
+    "bodyLocation": "Mouth/Jaw",
+    "provider": {
+      "@type": "Dentist",
+      "name": "Samarpan Dental Clinic",
+      "address": { "@type": "PostalAddress", "addressLocality": "Dahod", "addressRegion": "Gujarat", "addressCountry": "IN" }
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- WhatsApp Float -->
+  <div class="whatsapp-float">
+    <span class="whatsapp-float__tooltip">Book on WhatsApp</span>
+    <button class="whatsapp-float__btn" aria-label="Open WhatsApp">
+      <svg viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </button>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header site-header--scrolled" role="banner">
+    <div class="container">
+      <a href="../../index.html" class="site-logo">
+        <div class="site-logo__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M12 2C9 2 6 4.5 6 7.5c0 1.5.5 2.8 1.2 3.8C6.5 12.5 6 14 6 15.5 6 19 8.7 22 12 22s6-3 6-6.5c0-1.5-.5-3-1.2-4.2.7-1 1.2-2.3 1.2-3.8C18 4.5 15 2 12 2z"/></svg>
+        </div>
+        <div class="site-logo__text">
+          <span class="site-logo__name">Samarpan Dental</span>
+          <span class="site-logo__tagline">Multispeciality Hospital · Dahod</span>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a href="tel:+91XXXXXXXXXX" class="header-phone">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.5a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .68h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.23a16 16 0 006.29 6.29l1.41-1.41a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15.92v1z"/></svg>
+          +91-XX-XXXX-XXXX
+        </a>
+        <a href="../../index.html#booking" class="btn btn--primary btn--sm">Book Free Consultation</a>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="../../index.html#about" class="mobile-nav__link">About Us</a>
+    <a href="../../index.html#services" class="mobile-nav__link">Services</a>
+    <a href="../doctors.html" class="mobile-nav__link">Our Doctors</a>
+    <a href="../../index.html#testimonials" class="mobile-nav__link">Reviews</a>
+    <a href="../../index.html#faq" class="mobile-nav__link">FAQ</a>
+    <a href="../../index.html#contact" class="mobile-nav__link">Contact</a>
+    <div class="mobile-nav__actions">
+      <a href="../../index.html#booking" class="btn btn--primary btn--lg">📅 Book Free Consultation</a>
+      <a href="https://wa.me/91XXXXXXXXXX" class="btn btn--whatsapp btn--lg" target="_blank">💬 WhatsApp Us</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+      <div class="container">
+        <nav class="service-hero__breadcrumb" aria-label="Breadcrumb">
+          <a href="../../index.html">Home</a>
+          <span aria-hidden="true">›</span>
+          <a href="../../index.html#services">Services</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">Pediatric Dentistry</span>
+        </nav>
+        <span class="badge badge--primary" style="background: rgba(255,255,255,0.15); color: white; margin-bottom: var(--space-4);">🦷 Permanent Solution</span>
+        <h1 class="service-hero__title">
+          Pediatric Dentistry in Dahod
+        </h1>
+        <p class="service-hero__subtitle">
+          Your child’s first dental visit should build confidence, not fear. Gentle, specialist pediatric dental care designed for little smiles — with friendly communication in Gujarati and Hindi for a comfortable, stress-free experience.
+        </p>
+        <div class="service-hero__actions">
+          <a href="../../index.html#booking" class="btn btn--primary btn--lg">📅 Book Free Implant Consultation</a>
+          <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20need%20information%20about%20dental%20implants" class="btn btn--ghost btn--lg" target="_blank" rel="noopener">💬 Ask on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Content -->
+    <section class="service-content" style="background: var(--color-off-white);">
+      <div class="container">
+        <div class="service-content__grid">
+
+          <!-- Main Content -->
+          <article data-animate>
+
+            <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-5);">What Are Pediatric Dentistry?</h2>
+            <p style="color: var(--color-dark-gray); line-height: var(--leading-relaxed); margin-bottom: var(--space-5);">
+              Pediatric dentistry is a specialized branch of dentistry focused on the oral health of infants, children, and teenagers. It emphasizes preventive care, early diagnosis, and gentle treatments designed specifically for growing teeth and developing jaws.
+            </p>
+            <p style="color: var(--color-dark-gray); line-height: var(--leading-relaxed); margin-bottom: var(--space-8);">
+              Children’s dental needs are different from adults — both medically and emotionally. Pediatric dental care uses child-friendly techniques, behavior guidance, and a comfortable environment to help young patients feel safe and confident during their visits.
+            </p>
+            <p style="color: var(--color-dark-gray); line-height: var(--leading-relaxed); margin-bottom: var(--space-8);">
+              Regular pediatric dental checkups help prevent cavities, monitor tooth development, guide proper jaw growth, and build healthy oral habits from an early age. The goal is not just to treat dental problems, but to create positive dental experiences that encourage a lifetime of healthy smiles.
+            </p>
+
+            <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-5);">Why Choose Pediatric Dentistry Over Other Options?</h2>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: var(--space-4); margin-bottom: var(--space-10);">
+              <div style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-5); border-left: 3px solid var(--color-primary);">
+                <div style="font-weight: var(--weight-bold); color: var(--color-primary); margin-bottom: var(--space-2);">Specialized Pediatric Dental Care ✅</div>
+                <ul style="font-size: var(--text-sm); color: var(--color-dark-gray); display: flex; flex-direction: column; gap: var(--space-2);">
+                  <li>✓ Child-friendly approach focused on comfort and trust</li><li>✓ Preventive care to avoid future dental problems</li>
+                  <li>✓ Dentists trained to treat growing teeth and jaws</li><li>✓ Gentle behavior guidance to reduce fear and anxiety</li>
+                  <li>✓ Early detection of cavities and alignment issues</li><li>✓ Builds positive dental habits from a young age</li>
+                </ul>
+              </div>
+              <div style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-5); border-left: 3px solid var(--color-mid-gray);">
+                <div style="font-weight: var(--weight-bold); color: var(--color-mid-gray); margin-bottom: var(--space-2);">Delaying Dental Visits ❌</div>
+                <ul style="font-size: var(--text-sm); color: var(--color-dark-gray); display: flex; flex-direction: column; gap: var(--space-2);">
+                  <li>✗ Higher risk of cavities and tooth pain</li><li>✗ Increased treatment needs later</li>
+                  <li>✗ Dental problems may go unnoticed</li><li>✗ Fear of dentists may develop over time</li>
+                  <li>✗ Possible difficulty eating or speaking</li>
+                </ul>
+              </div>
+              <div style="background: var(--color-white); border-radius: var(--radius-md); padding: var(--space-5); border-left: 3px solid var(--color-mid-gray);">
+                <div style="font-weight: var(--weight-bold); color: var(--color-mid-gray); margin-bottom: var(--space-2);">General Adult Dental Care Only ⚠️</div>
+                <ul style="font-size: var(--text-sm); color: var(--color-dark-gray); display: flex; flex-direction: column; gap: var(--space-2);">
+                  <li>~ Not always tailored to children’s emotional needs</li>
+                  <li>~ Limited focus on growth and development monitoring</li>
+                  <li>✗ May feel intimidating for young patients</li>
+                  <li>~ Less emphasis on preventive education for kids</li>
+                </ul>
+              </div>
+            </div>
+
+            <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">Our Pediatric Dentistry Process — Step by Step</h2>
+            <div style="margin-bottom: var(--space-10);">
+              <div class="process-step">
+                <div class="process-step__number">1</div>
+                <div>
+                  <div class="process-step__title">Friendly Welcome & Child Comfort First (Day 1)</div>
+                  <p class="process-step__desc">We begin with a gentle introduction to help your child feel relaxed and safe. Our team explains everything in a simple, friendly way using Gujarati or Hindi when needed, helping reduce fear and build trust from the start.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__number">2</div>
+                <div>
+                  <div class="process-step__title">Gentle Dental Examination</div>
+                  <p class="process-step__desc">The dentist carefully checks your child’s teeth, gums, and jaw development. If required, safe digital X-rays are taken to detect cavities or growth concerns early — all done with a child-friendly approach.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__number">3</div>
+                <div>
+                  <div class="process-step__title">Preventive Care & Treatment</div>
+                  <p class="process-step__desc">Depending on your child’s needs, we may perform professional cleaning, fluoride application, cavity treatment, or preventive sealants. Every step is explained to both parent and child for complete comfort and understanding.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__number">4</div>
+                <div>
+                  <div class="process-step__title">Parent Guidance & Habit Building</div>
+                  <p class="process-step__desc">We guide parents on brushing techniques, diet habits, thumb-sucking concerns, and cavity prevention — helping maintain healthy smiles at home between visits.</p>
+                </div>
+              </div>
+              <div class="process-step">
+                <div class="process-step__number">5</div>
+                <div>
+                  <div class="process-step__title">Regular Checkups & Growth Monitoring</div>
+                  <p class="process-step__desc">Routine visits every 6 months allow us to monitor tooth eruption and jaw growth, ensuring healthy development and preventing future dental problems.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ on page -->
+            <h2 style="font-size: var(--text-3xl); margin-bottom: var(--space-6);">Common Questions About Pediatric Dentistry</h2>
+            <div class="accordion" style="margin-bottom: var(--space-10);">
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false">
+                  <span class="accordion-trigger__question">Does the Pediatric Dentistry Treatment hurt?</span>
+                  <span class="accordion-trigger__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span>
+                </button>
+                <div class="accordion-content"><div class="accordion-content__inner">No — pediatric dental treatments are designed to be gentle, comfortable, and child-friendly. Most procedures, such as dental checkups, cleanings, fluoride applications, and preventive treatments, are completely painless.</div></div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false">
+                  <span class="accordion-trigger__question">How long do Pediatric Dentistry last?</span>
+                  <span class="accordion-trigger__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span>
+                </button>
+                <div class="accordion-content"><div class="accordion-content__inner">Pediatric dental treatments are designed to protect your child’s teeth throughout their growing years. Preventive treatments like fluoride applications and sealants can last several months to a few years, while fillings and other treatments typically remain effective until the natural baby tooth is ready to fall out. Regular checkups help ensure long-lasting oral health and timely care as your child grows.</div></div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-trigger" aria-expanded="false">
+                  <span class="accordion-trigger__question">Is my child a candidate for Pediatric Dentistry?</span>
+                  <span class="accordion-trigger__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg></span>
+                </button>
+                <div class="accordion-content"><div class="accordion-content__inner">Yes. Pediatric dentistry is recommended for infants, children, and teenagers at every stage of dental development. Whether your child needs their first dental checkup, cavity prevention, habit guidance, or treatment for dental concerns, pediatric care is specially designed to meet their physical and emotional needs in a comfortable environment.</div></div>
+              </div>
+            </div>
+
+          </article>
+
+          <!-- Sidebar -->
+          <aside class="service-content__sidebar" data-animate data-animate-delay="2">
+
+            <!-- Booking CTA -->
+            <div class="sidebar-card" style="background: var(--color-primary); border: none;">
+              <h3 class="sidebar-card__title" style="color: white;">Book Free Pediatric Dentistry  Consultation</h3>
+              <p style="font-size: var(--text-sm); color: rgba(255,255,255,0.8); margin-bottom: var(--space-4);">Slots available this week. No obligation, no pressure.</p>
+              <a href="../../index.html#booking" class="btn btn--primary" style="width: 100%; justify-content: center; background: var(--color-accent);">📅 Book Now</a>
+              <a href="https://wa.me/91XXXXXXXXXX?text=Hi%2C%20I%20want%20to%20book%20a%20dental%20implant%20consultation" class="btn btn--ghost" style="width: 100%; justify-content: center; margin-top: var(--space-3);" target="_blank" rel="noopener">💬 WhatsApp</a>
+            </div>
+
+            <!-- Pricing -->
+            <div class="sidebar-card">
+              <h3 class="sidebar-card__title">Indicative Pricing</h3>
+              <div class="price-tag">
+                <div class="price-tag__label">Starting From</div>
+                <div class="price-tag__amount">₹[X,XXX]</div>
+              </div>
+              <p style="font-size: var(--text-xs); color: var(--color-mid-gray); margin-bottom: var(--space-3);">Per Pediatric Dentistry. Final cost depends on case complexity. Full estimate given at consultation.</p>
+              <div style="display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-sm); color: var(--color-success);">
+                ✅ EMI options available
+              </div>
+              <div style="display: flex; align-items: center; gap: var(--space-2); font-size: var(--text-sm); color: var(--color-success); margin-top: var(--space-2);">
+                ✅ Insurance assistance
+              </div>
+            </div>
+
+            <!-- Ideal For -->
+            <div class="sidebar-card">
+              <h3 class="sidebar-card__title">Ideal For</h3>
+              <div class="ideal-for">
+                <div class="ideal-item">Adults with one or more missing teeth</div>
+                <div class="ideal-item">Failed or ill-fitting dentures</div>
+                <div class="ideal-item">Failed dental bridges</div>
+                <div class="ideal-item">Teeth lost to decay, injury, or gum disease</div>
+                <div class="ideal-item">Anyone wanting a permanent, natural-looking solution</div>
+              </div>
+            </div>
+
+            <!-- Other Services -->
+            <div class="sidebar-card">
+              <h3 class="sidebar-card__title">Other Services</h3>
+              <div class="footer-links" style="gap: var(--space-2);">
+                <a href="root-canal.html" class="footer-link" style="color: var(--color-primary);">Root Canal Treatment →</a>
+                <a href="braces-orthodontics.html" class="footer-link" style="color: var(--color-primary);">Braces & Orthodontics →</a>
+                <a href="cosmetic-dentistry.html" class="footer-link" style="color: var(--color-primary);">Cosmetic Dentistry →</a>
+                <a href="dental-implants.html" class="footer-link" style="color: var(--color-primary);">Dental Implants →</a>
+                <a href="teeth-whitening.html" class="footer-link" style="color: var(--color-primary);">Teeth Whitening →</a>
+              </div>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <section class="section cta-section" style="padding: var(--space-16) 0;">
+      <div class="container">
+        <div class="cta-section__inner">
+          <h2 class="cta-section__title" style="font-size: var(--text-4xl);">
+            Ready to Restore Your Smile?
+          </h2>
+          <p class="cta-section__subtitle">
+            Free consultation. No pressure. Slots available this week in Dahod.
+          </p>
+          <div class="cta-section__actions">
+            <a href="../../index.html#booking" class="btn btn--ghost btn--lg">📅 Book Free Consultation</a>
+            <a href="https://wa.me/91XXXXXXXXXX" class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer (simplified for service pages) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__bottom" style="border-top: none; padding: var(--space-8) 0;">
+        <p class="footer-copyright">© <script>document.write(new Date().getFullYear())</script> Samarpan Dental Clinic, Dahod, Gujarat. All rights reserved.</p>
+        <nav class="footer-bottom-links">
+          <a href="../../index.html" class="footer-bottom-link">Home</a>
+          <a href="../../index.html#contact" class="footer-bottom-link">Contact</a>
+          <a href="../privacy-policy.html" class="footer-bottom-link">Privacy Policy</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js" defer></script>
+</body>
+</html>

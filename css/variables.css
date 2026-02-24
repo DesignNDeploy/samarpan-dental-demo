@@ -1,0 +1,128 @@
+/* ============================================================
+   SAMARPAN DENTAL CLINIC — Design Tokens & CSS Variables
+   File: css/variables.css
+   Purpose: All brand colors, typography, spacing, shadows
+   ============================================================ */
+
+:root {
+  /* ── Brand Colors ── */
+  --color-primary: #0A7E8C;
+  --color-primary-dark: #075F6B;
+  --color-primary-light: #0E9DAD;
+  --color-primary-xlight: #E0F4F6;
+
+  --color-accent: #F05A28;
+  --color-accent-dark: #C44820;
+  --color-accent-light: #FF7849;
+
+  --color-mint: #E8F7F5;
+  --color-mint-dark: #C8EDE9;
+
+  /* ── Neutrals ── */
+  --color-white: #FFFFFF;
+  --color-off-white: #F9F9F9;
+  --color-light-gray: #F2F4F6;
+  --color-mid-gray: #9CA3AF;
+  --color-dark-gray: #4B5563;
+  --color-charcoal: #2B2B2B;
+  --color-black: #111111;
+
+  /* ── Semantic ── */
+  --color-success: #16A34A;
+  --color-warning: #D97706;
+  --color-error: #DC2626;
+
+  /* ── Typography ── */
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'DM Sans', 'Helvetica Neue', sans-serif;
+  --font-accent: 'DM Sans', sans-serif;
+
+  /* ── Font Sizes (clamp for fluid typography) ── */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: clamp(2.5rem, 5vw, 3.5rem);
+  --text-hero: clamp(2.8rem, 6vw, 4.2rem);
+
+  /* ── Font Weights ── */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* ── Line Heights ── */
+  --leading-tight: 1.2;
+  --leading-snug: 1.4;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  /* ── Spacing ── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* ── Border Radius ── */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.06);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.12), 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-xl: 0 20px 60px rgba(0,0,0,0.15), 0 8px 24px rgba(0,0,0,0.10);
+  --shadow-primary: 0 8px 30px rgba(10, 126, 140, 0.25);
+  --shadow-accent: 0 8px 30px rgba(240, 90, 40, 0.30);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  --transition-spring: 350ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Layout ── */
+  --container-max: 1200px;
+  --container-wide: 1400px;
+  --container-narrow: 800px;
+  --header-height: 80px;
+
+  /* ── Z-Index ── */
+  --z-below: -1;
+  --z-base: 0;
+  --z-raised: 10;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+}
+
+/* ── Dark mode support (future-ready) ── */
+@media (prefers-color-scheme: dark) {
+  /* Intentionally empty — can be expanded later */
+}
+
+/* ── Reduced motion ── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
